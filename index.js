@@ -49,6 +49,7 @@ function removeFromCart(item) {
   if (cart.hasOwnProperty(item)) {
     var index = cart.findIndex(item);
     cart.splice(1, index);
+    return cart;
   }
   else {
     return "That item is not in your cart.";
