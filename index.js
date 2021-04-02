@@ -33,7 +33,7 @@ function viewCart() {
     var last = newArray.pop();
     var newLast = "and " + last;
     newArray.push(newLast);
-    return "In your cart, you have " + newArray.join(", ") + ".";
+    return `In your cart, you have ${ newArray.join(", ") }.`;
   }
 }
 
