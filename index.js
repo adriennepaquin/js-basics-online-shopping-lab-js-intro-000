@@ -18,7 +18,6 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  console.log(cart);
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
   }
@@ -47,7 +46,7 @@ function total() {
 
 function removeFromCart(item) {
   if (cart.hasOwnProperty(item)) {
-    var index = cart.findIndex(item);
+    var index = cart.findIndex(cart => itemName === "item");
     cart.splice(1, index);
     return cart;
   }
