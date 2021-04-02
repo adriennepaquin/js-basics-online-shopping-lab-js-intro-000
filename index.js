@@ -46,7 +46,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  //here
+  if cart.hasOwnProperty(item) {
+    var index = cart.findIndex(item);
+    cart.splice(1, index);
+  }
+  else {
+    return "That item is not in your cart.";
+  }
 }
 
 function placeOrder(cardNumber) {
