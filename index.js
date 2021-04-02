@@ -14,7 +14,7 @@ function addToCart(item) {
   var itemCart = { itemName: item, itemPrice: price};
   cart.push(itemCart);
   //console.log(cart);
-  return `${ item } has been added to your cart.``;
+  return `${ item } has been added to your cart.`;
 }
 
 function viewCart() {
