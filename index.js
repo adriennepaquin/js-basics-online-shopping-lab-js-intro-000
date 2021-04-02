@@ -46,7 +46,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if cart.hasOwnProperty(item) {
+  if (cart.hasOwnProperty(item)) {
     var index = cart.findIndex(item);
     cart.splice(1, index);
   }
