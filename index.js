@@ -30,7 +30,9 @@ function viewCart() {
     for (let i = 0; i < cart.length; i++) {
       newArray.push(cart[i].itemName + " at $" + cart[i].itemPrice);
     }
-    console.log(newArray[newArray.length + 1]);
+    var last = newArray.pop();
+    var newLast = "and " + last;
+    newArray.push(newLast);
     return "In your cart, you have " + newArray.join(", ") + ".";
   }
 }
