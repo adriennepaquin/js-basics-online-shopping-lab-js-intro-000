@@ -28,8 +28,9 @@ function viewCart() {
   else {
     var newArray = [];
     for (let i = 0; i < cart.length; i++) {
-      newArray.push(cart.itemName + " at $" + cart.itemPrice);
+      newArray.push(cart[i].itemName + " at $" + cart[i].itemPrice);
     }
+    return "In your cart, you have " + newArray.join(", ") + ".";
   }
 }
 
